@@ -1,0 +1,106 @@
+/* Réinitialisation de certains styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-image: image-set(url(../document/fond.jpg));
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    nav {
+        background-color: #333;
+    }
+
+    .menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu>li {
+        position: relative;
+        display: inline-block;
+    }
+
+    .menu>li>a {
+        display: block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu>li>a:hover {
+        background-color: #555;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu>li:hover .submenu {
+        display: block;
+    }
+
+    .submenu li {
+        width: 200px;
+        /* Ajustez la largeur selon vos besoins */
+    }
+
+    .submenu li a {
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .submenu li a:hover {
+        background-color: #555;
+    }
+
+    .content {
+        flex: 1;
+        /* Permet à la section de contenu de prendre l'espace disponible */
+        padding: 20px;
+    }
+
+    .bandeau {
+        background-color: #000;
+        /* Couleur noire */
+        color: #fff;
+        /* Couleur du texte en blanc */
+        text-align: center;
+        /* Centrer le texte */
+        padding: 15px 0;
+        /* Espacement vertical */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+
+}
+
+/* En-tête */
+header {
+    background-color: #dc8914;
+    color: #c91353;
+    padding: 1rem;
+    text-align: center;
+}
